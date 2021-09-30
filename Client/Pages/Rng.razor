@@ -1,0 +1,38 @@
+﻿@page "/Rng"
+
+<!--Allows the user to input a minimum and maximum value and get a random number from that range-->
+
+<h1>Random Number Generator</h1>
+
+<p>Input 2 numbers and generate a random number in the given range.</p>
+
+<input @bind="InputString1 " /> <!--input min-->
+<input @bind="InputString2 " /> <!--input max-->
+
+<button class="btn btn-primary" @onclick="GetRandom">Generate</button>
+
+<p>Output: @OutputString </p>
+
+@code
+
+{
+    //define properties
+    private string InputString1 { get; set; }   //input for minimum
+    private string InputString2 { get; set; }   //input for maximum
+
+    private string OutputString { get; set; }   //output
+
+    private void GetRandom()    //function to get a random number in a range
+
+    {
+        int min = int.Parse(InputString1);  //input min
+        int max = int.Parse(InputString2);  //input max
+        
+        Random rand = new Random();
+        int num = rand.Next(min, max+1);    //generates random number and stores it in the integer num
+
+        OutputString = num.ToString();  //outputs num, the randomly generated number
+
+    }
+
+}

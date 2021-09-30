@@ -1,10 +1,12 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Chris Bicknese.</a>
+﻿<!--top of the sidebar-->
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">Chris Bicknese</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
 </div>
 
+<!--options in the sidebar-->
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
@@ -21,7 +23,19 @@
 
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="ipo">
-                <span class="oi oi-plus" aria-hidden="true"></span> IPO
+                <span class="oi oi-x" aria-hidden="true"></span> IPO
+            </NavLink>
+        </li>
+
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Rng">
+                <span class="oi oi-question-mark" aria-hidden="true"></span> RNG
+            </NavLink>
+        </li>
+        
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="todo">
+                <span class="oi oi-check" aria-hidden="true"></span> Todo
             </NavLink>
         </li>
 

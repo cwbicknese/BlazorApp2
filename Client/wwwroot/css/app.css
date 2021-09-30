@@ -1,13 +1,18 @@
 ﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 
+//body text color
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
 }
 
+//color color-profile links
 a, .btn-link {
     color: #0366d6;
+
 }
 
+//button color
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -28,10 +33,11 @@ app {
 
 .main {
     flex: 1;
+    background-color: rgba(10, 10, 60, .05);   //main background color
 }
 
     .main .top-row {
-        background-color: #f7f7f7;
+        background-color: rgba(0, 0, 0,.1);
         border-bottom: 1px solid #d6d5d5;
         justify-content: flex-end;
     }
@@ -47,11 +53,11 @@ app {
 }
 
 .sidebar {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    background-image: linear-gradient(180deg, rgb(103, 59, 153) 3%, #3a0647 60%);   //sidebar color
 }
 
     .sidebar .top-row {
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0,0,0,.2);
     }
 
     .sidebar .navbar-brand {
@@ -95,6 +101,7 @@ app {
             .sidebar .nav-item a:hover {
                 background-color: rgba(255,255,255,0.1);
                 color: white;
+                font-size: 1.2rem;
             }
 
 .content {

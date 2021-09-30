@@ -2,7 +2,7 @@
 
 <h1>IPO</h1>
 
-<p>Input prompt </p>
+<p>Input a number to double.</p>
 
 <input @bind="InputString " />
 
@@ -15,19 +15,14 @@
 {
 
     private string InputString { get; set; }
-
     private string OutputString { get; set; }
 
+    //function to get a number and double it
     private void DoProcessing()
-
     {
-
-        double num = double.Parse(InputString);
-
-        num = num * 2;
-
-        OutputString = num.ToString();
-
+        double num = double.Parse(InputString); //converts string into double, allowing math to be performed on it
+        num = num * 2;  //math
+        OutputString = num.ToString();  //output the result
     }
 
 }
