@@ -1,3 +1,9 @@
+Link to the app: https://thankful-rock-0fbfebf10.azurestaticapps.net
+
+This is a static web app that offers a few utilities to users. These can be accessed from the left sidebar. They include a home page, a counter, an input/output system that performs math, a random number generator, and a to do list.
+
+![BlazorApp_screenshot](https://user-images.githubusercontent.com/42978071/135546023-6fe29349-b04e-4eb7-b98e-a88118cc2766.PNG)
+
 # Blazor Starter Application
 
 This template contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code.
